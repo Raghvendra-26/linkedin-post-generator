@@ -1,5 +1,5 @@
-from llm_helper import llm
-from few_shot import FewShotPosts
+from backend.llm_helper import llm
+from backend.few_shot import FewShotPosts
 
 few_shot = FewShotPosts()
 

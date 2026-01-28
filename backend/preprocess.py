@@ -2,7 +2,7 @@ import json
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.exceptions import OutputParserException
-from llm_helper import llm
+from backend.llm_helper import llm
 
 def preprocess_posts(raw_file_path,processed_file_path='data/processed_posts.json'):
     enriched_posts = []
