@@ -51,15 +51,27 @@ linkedin-post-generator/
 │   ├── raw_posts.json          # Raw LinkedIn posts dataset
 │   └── processed_posts.json    # Cleaned & processed posts
 │
-├── few_shot.py                 # Few-shot examples loader
-├── llm_helper.py               # LLM abstraction & helpers
-├── preprocess.py               # Data preprocessing pipeline
-├── post_generator.py           # Core post generation logic
-├── rewrite_post.py             # Rewrite engine (hook, CTA, shorten, bold)
+├── backend/
+│   ├── __init__.py             # Marks dir as a python package
+│   └── few_shot.py             # Few-shot examples loader
+│   └── llm_helper.py           # LLM abstraction & helpers
+│   └── post_generator.py       # Core post generation logic
+│   └── preprocess.py           # Data preprocessing pipeline
+│   └── rewrite_post.py         # Rewrite engine (hook, CTA, shorten, bold)
+│
+├── state/
+│   ├── session.py              # contain session state 
+│
+├── ui/
+│   ├── sidebar.py              # renders sidebar
+│   └── output.py               # show output
+│
 ├── main.py                     # Streamlit application entry point
+├── constants.py                # Contain lists of options for fields
 │
 ├── .env                        # Environment variables
 ├── .gitignore
+├── requirements.txt
 └── README.md
 ```
 
